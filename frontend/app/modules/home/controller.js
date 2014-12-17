@@ -3,6 +3,7 @@ define(function (require) {
 
     var Marionette = require('marionette');
     var IndexView = require('./views/index');
+    var AboutView = require('./views/about');
 
     return Marionette.Controller.extend({
 
@@ -14,6 +15,9 @@ define(function (require) {
             this.app.container.show(new IndexView({
                 message : 'Hello!'
             }));
+        },
+        about : function() {
+            this.app.container.show(new AboutView());
         }
     });
 

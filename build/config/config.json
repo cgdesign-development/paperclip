@@ -1,0 +1,6 @@
+{
+    "paths": {
+        "staticFiles": "."
+    },
+    "pushState" : false
+}
